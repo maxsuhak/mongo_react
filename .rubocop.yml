@@ -1,0 +1,25 @@
+inherit_from: .rubocop_todo.yml
+
+require:
+  - rubocop-rails
+  - rubocop-performance
+
+AllCops:
+  TargetRubyVersion: 2.6.6
+  Exclude:
+    - db/**/*
+    - node_modules/**/*
+    - vendor/**/*
+    - tmp/**/*
+    - bin/**/*
+    - config/**/*
+    - mongo-volume/**/*
+  NewCops: enable
+  SuggestExtensions: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Style/Documentation:
+  Enabled: false
+Style/ClassAndModuleChildren:
+  Enabled: false

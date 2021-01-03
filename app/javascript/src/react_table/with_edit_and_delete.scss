@@ -1,0 +1,9 @@
+.ReactTable {
+  .rt-thead .rt-th:nth-last-of-type(2), .rt-tbody .rt-rd:nth-last-of-type(2), .rt-tbody .rt-td:nth-last-of-type(2) {
+    border-right: 0;
+  }
+}
+
+.flex-zero {
+  flex: 0 !important;
+}
